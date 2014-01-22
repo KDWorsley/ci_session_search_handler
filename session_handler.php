@@ -8,8 +8,8 @@
         if($value){
             $this->session->set_userdata($session_item, $value);
             return $value;
-        } elseif($this->session->userdata('session_item')){
-            $value = $this->session->userdata('session_item');
+        } elseif($this->session->userdata($session_item)){
+            $value = $this->session->userdata($session_item);
             return $value;
         } else {
             $value ='';
